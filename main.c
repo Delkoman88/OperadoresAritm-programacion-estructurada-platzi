@@ -1,28 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Ingresar los valores necesarios para calcular el area de un cilindro
 int main()
 {
-    //Se declaran las variables
-    int rSum;
-    float rRes;
-    float rDiv;
-    float rMult;
-    int rMod;
+    //Se declaran variables
+    float radio;
+    float altura;
+    float rArea;
+    float rVolumen;
 
-    //Se asignan valores a las variables
-    rSum = 7 + 3;
-    rRes = 7.1 - 3.1;
-    rDiv = 7.0 / 3.0;
-    rMult = 7 * 3;
-    rMod = 7 % 3;
+    //Se piden los valores al usuario
+    printf("Ingresa el valor del radio: ");
+    scanf("%f", &radio);
+    printf("Ingresa el valor de la altura: ");
+    scanf("%f", &altura);
+
+
+    //Se realiza la operación para calcular área y volumen de cilindro
+    rArea = (2 * 3.1416) * (radio * radio);
+    rVolumen = (rArea * altura);
 
     //Se muestran los resultados en pantalla
-    printf("Resultado de la suma: %i \n", rSum);
-    printf("Resultado de la resta: %f \n", rRes);
-    printf("Resultado de la division: %f \n", rDiv);
-    printf("Resultado de la multiplicacion: %f \n", rMult);
-    printf("Resultado del modulo: %i \n", rMod);
+    printf("El area del cilindro es: %f \n", rArea);
+    printf("El volumen del cilindro es: %f \n", rVolumen);
 
 
     return 0;
