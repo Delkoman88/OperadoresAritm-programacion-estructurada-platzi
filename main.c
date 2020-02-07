@@ -1,29 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Conversion de farenheit a celcius
 int main()
 {
+    printf("Vamos a transformar de grados Farenheit a grados Celcius! \n \n");
+
     //Se declaran las variables
-    int rSum;
-    float rRes;
-    float rDiv;
-    float rMult;
-    int rMod;
+    float Gfarenheit;
+    float Gcelcius;
 
-    //Se asignan valores a las variables
-    rSum = 7 + 3;
-    rRes = 7.1 - 3.1;
-    rDiv = 7.0 / 3.0;
-    rMult = 7 * 3;
-    rMod = 7 % 3;
+    //Se pide ingresar el valor a convertir al usuario
+    printf("Ingresa la temperatura en grados Farenheit: ");
+    scanf("%f", &Gfarenheit);
 
-    //Se muestran los resultados en pantalla
-    printf("Resultado de la suma: %i \n", rSum);
-    printf("Resultado de la resta: %f \n", rRes);
-    printf("Resultado de la division: %f \n", rDiv);
-    printf("Resultado de la multiplicacion: %f \n", rMult);
-    printf("Resultado del modulo: %i \n", rMod);
+    //Se realiza la conversion
+    Gcelcius = ((Gfarenheit - 32) * 5 / 9);
 
+    //Se muestra el resultado en pantalla
+    printf("\n La temperatura en grados Celcius  es: %f \n", Gcelcius);
 
     return 0;
 }
